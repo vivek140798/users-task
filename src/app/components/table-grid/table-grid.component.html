@@ -1,0 +1,27 @@
+<div class="table-wrapper">
+    <table>
+        <thead>
+            <tr>
+                <th *ngFor="let item of listHeader">
+                    <div>{{item}}</div>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of dataList">
+                <td *ngFor="let i of listKeys; let index=index">
+                    <div *ngIf="index!=1">{{item[i]}}</div>
+                    <div *ngIf="index==1"><img src="{{item[i]}}"></div>
+                </td>
+                <td>
+                    <div class="d-flex justify-content-left">
+                        <button mat-raised-button color="custom" class="mr-1"
+                            (click)="modify('view',item)">View</button>
+                        <button mat-raised-button color="warn" class="ml-1"
+                            (click)="modify('delete',item)">Delete</button>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

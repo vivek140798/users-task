@@ -1,0 +1,17 @@
+.confirm-modal-wrapper {
+  width: 500px;
+  margin: -24px;
+  max-width: calc(100% + 48px);
+  .modal-dialog {
+    margin: 0px auto;
+    .modal-content {
+      border: none;
+    }
+    .modal-title {
+      font-size: 20px;
+    }
+    h6 {
+      font-size: 16px;
+    }
+  }
+}

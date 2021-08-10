@@ -1,0 +1,27 @@
+.table-wrapper {
+  table {
+    width: 100%;
+    margin: 20px 0 60px;
+    @media (max-width: 767px) {
+      width: 800px;
+      margin: 20px 0;
+    }
+    th {
+      font-weight: bold;
+      text-align: left;
+    }
+    td {
+      text-align: left;
+    }
+    td,
+    th {
+      padding: 10px;
+      font-size: 14px;
+      color: black;
+    }
+  }
+  .mat-custom {
+    background: #2e8033;
+    color: white;
+  }
+}

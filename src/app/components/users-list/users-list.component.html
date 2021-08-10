@@ -1,0 +1,12 @@
+<div class="users-list-component-wrapper">
+    <div class="container">
+        <div class="shadow-box">
+            <div class="users-wrapper">
+                <h6>Users List</h6>
+                <div class="users-table-wrap">
+                    <app-table-grid [tableGridData]="tableConfigData" (actionEvent)="modify($event)"></app-table-grid>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

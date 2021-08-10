@@ -1,0 +1,30 @@
+.users-list-component-wrapper {
+  margin: 0px 0 50px;
+  .users-wrapper {
+    text-align: center;
+    margin-top: 10px;
+    h6 {
+      font-size: 32px;
+      color: black;
+      font-weight:400;
+      text-align: left;
+    }
+    .users-table-wrap {
+      background-color: white;
+      overflow: auto;
+      @media (max-width: 767px) {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+//snack bar
+::ng-deep .success {
+  background: #2e8033;
+  color: white;
+}
+
+::ng-deep .error {
+  background: #f44336;
+  color: white;
+}
